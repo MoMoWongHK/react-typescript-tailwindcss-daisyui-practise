@@ -1,35 +1,23 @@
-import React, {useEffect} from 'react'
-import {useSelector, useDispatch} from "react-redux";
-import {Link, Route, withRouter} from "react-router-dom";
-import {initStateType} from "../../redux/reducers/TodoReducer";
+import React from "react"
+import { useSelector } from "react-redux"
+import { withRouter } from "react-router-dom"
+import TodoList from "../../Component/TodoList/TodoList"
 
-import TodoList from "../../Component/TodoList/TodoList";
+import { ApplicationState } from "../../Redux/reducers/rootReducer"
 
 const TodoListPage: React.FC = (props) => {
+  const todos = useSelector((state: ApplicationState) => {
+    return state.todoReducer.allTodo
+  })
 
-
-    const todos = useSelector((state: any) =>{
-        return state.todoReducer.allTodo
-    });
-
-    useEffect(() => {
-        console.log(todos)
-    }, [todos])
-
-    if (Array.isArray(todos)) {
-        return (
-            <div>
-                <TodoList items={todos}/>
-            </div>
-        )
-    } else {
-        return (
-            <div>
-                loading...
-            </div>
-        )
-    }
+  if (Array.isArray(todos)) {
+    return (
+      <div>
+        <TodoList items={todos} />
+      </div>
+    )
+  }
+  return <div>loading...</div>
 }
 
-
-export default (withRouter(TodoListPage))
+export default withRouter(TodoListPage)
