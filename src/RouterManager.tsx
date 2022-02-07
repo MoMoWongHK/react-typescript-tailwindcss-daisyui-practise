@@ -7,7 +7,7 @@ const RouterManager = () => {
     <div>
       <Switch>
         <Route path={"/"}>
-          <TodoList />
+          <TodoList /
         </Route>
       </Switch>
     </div>
