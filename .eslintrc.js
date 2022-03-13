@@ -55,7 +55,7 @@ module.exports = {
     "func-style": ["error", "declaration", { allowArrowFunctions: true }],
     "implicit-arrow-linebreak": ["error", "beside"],
     "jsx-quotes": ["error", "prefer-double"],
-    "max-params": ["error", 3],
+    "max-params": ["error", 5],
     "max-nested-callbacks": ["error", 3],
     "max-len": [
       1,

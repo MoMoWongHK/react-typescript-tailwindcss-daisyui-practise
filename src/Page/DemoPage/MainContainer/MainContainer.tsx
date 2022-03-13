@@ -1,11 +1,7 @@
 import React from "react"
 import { useSelector } from "react-redux"
 import { Route, Switch, withRouter } from "react-router-dom"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBagShopping, faBars, faEye } from "@fortawesome/free-solid-svg-icons"
 import LeftButtonGroup from "./LeftButtonGroup/LeftButtonGroup"
-import DemoPage from "../DemoPage"
-import TodoList from "../../TodoListPage/TodoListPage"
 import HomePage from "../../HomePage/HomePage"
 
 const MainContainer: React.FC = (props) => {
@@ -14,7 +10,7 @@ const MainContainer: React.FC = (props) => {
   // })
 
   return (
-    <div className="grid grid-cols-12 gap-4">
+    <div className="grid grid-cols-12 gap-4 h-full">
       <div className="col-span-1 border-r border-base-300 h-full">
         <LeftButtonGroup />
       </div>

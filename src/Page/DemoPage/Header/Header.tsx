@@ -1,6 +1,7 @@
 import React from "react"
-import { useSelector } from "react-redux"
 import { withRouter } from "react-router-dom"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBatteryQuarter } from "@fortawesome/free-solid-svg-icons"
 
 const Header: React.FC = (props) => {
   // const todos = useSelector((state: ApplicationState) => {
@@ -16,11 +17,16 @@ const Header: React.FC = (props) => {
         <a className="btn btn-ghost normal-case text-xl">1:58 AM</a>
       </div>
       <div className="navbar-end">
-        <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-          <div className="w-10 rounded-full">
-            <img src="https://api.lorem.space/image/face?hash=33791" />
-          </div>
-        </label>
+        <div className="px-4">
+          <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+            <div className="w-10 rounded-full">
+              <FontAwesomeIcon
+                icon={faBatteryQuarter}
+                className="text-2xl text-gray-600 text-center my-auto"
+              />
+            </div>
+          </label>
+        </div>
       </div>
     </div>
   )

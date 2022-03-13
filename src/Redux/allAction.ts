@@ -9,4 +9,8 @@ export const allAction = {
   //    Modal Reducer
   SET_MODAL: "SET_MODAL",
   CLOSE_MODAL: "CLOSE_MODAL",
+
+  //    Recommendation Reducer
+  SET_SHOPS: "SET_SHOP",
+  SELECT_SHOP: "SELECT_SHOP",
 }

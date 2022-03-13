@@ -13,8 +13,8 @@ const DemoPage: React.FC = (props) => {
 
   return (
     <div
-      className=" max-w-7xl mx-auto rounded-2xl border border-gray-200 overflow-hidden my-8"
-      style={{ height: "800px" }}>
+      className="mx-auto rounded-2xl border border-gray-200 overflow-hidden  my-2"
+      style={{ maxWidth: "1600px", height: "800px" }}>
       {/*header*/}
       <Header />
       {/*main*/}
