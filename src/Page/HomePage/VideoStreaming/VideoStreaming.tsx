@@ -15,7 +15,7 @@ const VideoStreaming: React.FC = (props) => {
       <div style={{ height: "500px" }}>
         <img
           className="object-cover h-full w-full rounded-xl"
-          src="https://i.redd.it/ecve9ia0a1851.png"
+          src="https://imageio.forbes.com/specials-images/imageserve/61bf870d2e95829f4516cac6/Shoppers-Black-Friday-Mall-Houston-Texas/960x0.jpg?fit=bounds&format=jpg&width=960"
           alt="camera streaming"
         />
       </div>
